@@ -1,11 +1,11 @@
 {
-  "name": "react-slingshot",
-  "version": "3.0.1",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "tw-100-mountain",
+  "version": "0.0.1",
+  "description": "",
   "scripts": {
     "start-message": "babel-node tools/startMessage.js",
     "prestart": "npm-run-all --parallel start-message remove-dist lint:tools",
-    "start": "npm-run-all --parallel test:watch open:src",
+    "start": "npm-run-all --parallel open:src",
     "open:src": "babel-node tools/srcServer.js",
     "open:dist": "babel-node tools/distServer.js",
     "lint:tools": "eslint webpack.config.js tools",
@@ -18,17 +18,8 @@
     "test": "mocha tools/testSetup.js src/**/*.spec.js --reporter progress",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "Cory House",
+  "author": "Yes",
   "license": "MIT",
-  "dependencies": {
-    "connect-history-api-fallback": "1.1.0",
-    "object-assign": "4.0.1",
-    "react": "15.0.0",
-    "react-dom": "15.0.0",
-    "react-redux": "4.4.0",
-    "react-router": "2.0.0",
-    "redux": "3.3.1"
-  },
   "devDependencies": {
     "babel-cli": "6.5.1",
     "babel-core": "6.5.1",
@@ -43,6 +34,7 @@
     "chai": "3.4.1",
     "cheerio": "0.19.0",
     "colors": "1.1.2",
+    "connect-history-api-fallback": "1.2.0",
     "cross-env": "1.0.7",
     "css-loader": "0.23.1",
     "eslint": "2.2.0",
@@ -51,9 +43,18 @@
     "eslint-plugin-react": "4.0.0",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.8.5",
+    "json-loader": "0.5.4",
+    "leaflet": "0.7.7",
     "mocha": "2.3.4",
     "node-sass": "3.4.2",
     "npm-run-all": "1.6.0",
+    "object-assign": "4.0.1",
+    "react": "15.0.1",
+    "react-dom": "15.0.1",
+    "react-leaflet": "0.11.0",
+    "react-redux": "4.4.2",
+    "react-router": "2.0.1",
+    "redux": "3.4.0",
     "rimraf": "2.5.0",
     "sass-loader": "3.1.2",
     "style-loader": "0.13.0",
@@ -61,24 +62,5 @@
     "webpack-dev-middleware": "1.4.0",
     "webpack-hot-middleware": "2.6.0",
     "yargs": "3.32.0"
-  },
-  "keywords:": [
-    "react",
-    "reactjs",
-    "react-router",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "redux",
-    "flux",
-    "boilerplate",
-    "starter"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/coryhouse/react-slingshot"
   }
 }
