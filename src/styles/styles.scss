@@ -1,10 +1,87 @@
 /* Variables */
+$color-teal-600: #00897B;
+$color-grey-400: #bdbdbd;
 
 /* Styles */
 body {
   margin: 0 auto;
 }
 
-#map {
-  height: 100vh;
+#root {
+
+  #header {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid $color-grey-400;
+  }
+
+  #content {
+    display: flex;
+
+    #map {
+      flex: 3;
+      height: 100vh;
+    }
+
+    #control-panel {
+      flex: 2;
+      background: $color-teal-600;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+
+      .title {
+        color: white;
+        margin: 10px 0 0 0;
+      }
+
+      #mountain-container {
+        flex: 1;
+        height: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .mountain{
+          width: 140px;
+          padding: 10px 0 10px 10px;
+          color: white;
+          border: 1px solid white;
+          margin: 10px 0 10px 0;
+          cursor: pointer;
+
+          &:hover {
+            color: black;
+            background-color: white;
+          }
+        }
+      }
+
+      #router-container {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .route {
+          width: 140px;
+          height: 140px;
+          text-align: center;
+          line-height: 140px;
+          color: white;
+          border: 1px solid white;
+          margin: 10px 0 10px 0;
+          cursor: pointer;
+
+          &:hover {
+            color: black;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
 }
