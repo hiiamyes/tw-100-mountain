@@ -19,8 +19,9 @@ class App extends Component {
       this.map.invalidateSize();
     }, 10)
 
+    console.log(require('../images/marker.png'));
     var largeicon = L.icon({
-        iconUrl: 'tw-100-mountain/' + require('../images/marker.png'),
+        iconUrl: 'tw-100-mountain' + require('../images/marker.png'),
         iconSize: [25, 41]
     });
 
@@ -89,8 +90,6 @@ class App extends Component {
   }
 
   render() {
-
-    console.log(__dirname);
 
     var mountains = require('../assets/mountains.json');
 
