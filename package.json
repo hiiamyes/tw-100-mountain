@@ -14,7 +14,7 @@
     "build:html": "babel-node tools/buildHtml.js",
     "build:js": "babel-node tools/build.js",
     "prebuild": "npm run clean-dist && npm run build:html",
-    "build": "babel-node tools/build.js && npm run open:dist",
+    "build": "babel-node tools/build.js && npm run",
     "test": "mocha tools/testSetup.js src/**/*.spec.js --reporter progress",
     "test:watch": "npm run test -- --watch"
   },
