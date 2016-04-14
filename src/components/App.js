@@ -90,6 +90,8 @@ class App extends Component {
 
   render() {
 
+    console.log(__dirname);
+
     var mountains = require('../assets/mountains.json');
 
     return (
