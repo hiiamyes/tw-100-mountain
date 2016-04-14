@@ -20,7 +20,7 @@ class App extends Component {
     }, 10)
 
     var largeicon = L.icon({
-        iconUrl: require('../images/marker.png'),
+        iconUrl: 'tw-100-mountain/' + require('../images/marker.png'),
         iconSize: [25, 41]
     });
 
